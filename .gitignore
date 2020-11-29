@@ -15,3 +15,7 @@ media/
 *.pyc
 *.db
 *.pid      
+
+# ipynb files
+.ipynb_checkpoints/
+*.ipynb

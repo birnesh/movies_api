@@ -9,10 +9,10 @@ class Person(models.Model):
     id = models.AutoField(primary_key=True)
 
     full_name = models.CharField(max_length=50)
-    nick_name = models.CharField(max_length=25, null=True)
-    gender = models.CharField(max_length=10, null=True)
-    date_of_birth = models.DateField(null=True)
-    nationality = models.CharField(max_length=20, null=True)
+    nick_name = models.CharField(max_length=25, blank=True, null=True)
+    gender = models.CharField(max_length=10, blank=True, null=True)
+    date_of_birth = models.DateField(blank=True, null=True)
+    nationality = models.CharField(max_length=20, blank=True, null=True)
 
     def __str__(self):
         return f"{str(self.id)} : {self.full_name}"
@@ -33,14 +33,20 @@ class MovieInformation(models.Model):
     title = models.CharField(max_length=50)
     journal = models.CharField(max_length=30)
     date_of_release = models.DateField()
-    imbd_rating = models.FloatField(null=True)
+    imbd_rating = models.FloatField(blank=True, null=True)
     comic = models.CharField(max_length=10)
     director = models.ForeignKey(
-        Person, related_name="directed_movies", on_delete=models.SET_NULL, null=True
+        Person,
+        related_name="directed_movies",
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
     )
-    cast = models.ManyToManyField(
-        Person, through="CastInformation", related_name="movie_info"
-    )
+    # cast = models.ManyToManyField(
+    #     Person, through="CastInformation", related_name="movie_info"
+    # )
+    budget = models.IntegerField(blank=True, null=True)
+    duration = models.CharField(max_length=15, blank=True, null=True)
 
     def __str__(self):
         return f"{str(self.id)} : {self.title}"
@@ -51,22 +57,22 @@ class MovieInformation(models.Model):
         verbose_name_plural = "movie_info"
 
 
-class CastInformation(models.Model):
-    """
-    this model cotains the crew and cast in a movie
-    """
+# class CastInformation(models.Model):
+#     """
+#     this model cotains the crew and cast in a movie
+#     """
 
-    id = models.AutoField(primary_key=True)
-    role = models.CharField(max_length=20)
-    cast = models.ForeignKey(Person, related_name="cast_info", on_delete=models.CASCADE)
-    movie = models.ForeignKey(
-        MovieInformation, related_name="cast_info", on_delete=models.CASCADE
-    )
+#     id = models.AutoField(primary_key=True)
+#     role = models.CharField(max_length=20)
+#     cast = models.ForeignKey(Person, related_name="cast_info", on_delete=models.CASCADE)
+#     movie = models.ForeignKey(
+#         MovieInformation, related_name="cast_info", on_delete=models.CASCADE
+#     )
 
-    def __str__(self):
-        return f"{str(self.id)} : {self.title}-{self.cast.name}"
+#     def __str__(self):
+#         return f"{self.role} : {self.cast.full_name}"
 
-    class Meta:
-        db_table = "cast_info"
-        verbose_name = "cast_info"
-        verbose_name_plural = "cast_info"
+#     class Meta:
+#         db_table = "cast_info"
+#         verbose_name = "cast_info"
+#         verbose_name_plural = "cast_info"
