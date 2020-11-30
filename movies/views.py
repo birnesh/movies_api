@@ -1,5 +1,5 @@
+from url_filter.integrations.drf import DjangoFilterBackend
 from django.shortcuts import render
-from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, generics, viewsets
 
 from movies.models import MovieInformation, Person
@@ -19,12 +19,12 @@ class MovieListView(generics.ListAPIView):
         filters.SearchFilter,
         filters.OrderingFilter,
     ]
-    filterset_fields = [
+    filter_fields = [
         "title",
         "journal",
         "imbd_rating",
         "comic",
-        "director__full_name",
+        "director",
         "budget",
     ]
     search_fields = [

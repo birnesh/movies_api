@@ -1,0 +1,352 @@
+[
+{
+  "model": "movies.movieinformation",
+  "pk": 1,
+  "fields": {
+    "title": "The Incredible Hulk",
+    "journal": "Action",
+    "date_of_release": "2008-06-12",
+    "imbd_rating": 6.8,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 150000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 2,
+  "fields": {
+    "title": "Iron Man",
+    "journal": "Action",
+    "date_of_release": "2008-04-30",
+    "imbd_rating": 7.9,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 140000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 3,
+  "fields": {
+    "title": "Iron Man 2",
+    "journal": "Action",
+    "date_of_release": "2010-04-28",
+    "imbd_rating": 7.0,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 200000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 4,
+  "fields": {
+    "title": "Thor",
+    "journal": "Action",
+    "date_of_release": "2011-04-21",
+    "imbd_rating": 7.0,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 150000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 5,
+  "fields": {
+    "title": "Iron Man 3",
+    "journal": "Action",
+    "date_of_release": "2013-04-18",
+    "imbd_rating": 7.2,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 200000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 6,
+  "fields": {
+    "title": "Thor: The Dark World",
+    "journal": "Science Fiction",
+    "date_of_release": "2013-10-29",
+    "imbd_rating": 7.0,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 170000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 7,
+  "fields": {
+    "title": "Captain America: The Winter Soldier",
+    "journal": "Action",
+    "date_of_release": "2014-03-20",
+    "imbd_rating": 7.8,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 170000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 8,
+  "fields": {
+    "title": "Guardians of the Galaxy",
+    "journal": "Science Fiction",
+    "date_of_release": "2014-07-30",
+    "imbd_rating": 8.1,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 170000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 9,
+  "fields": {
+    "title": "Avengers: Age of Ultron",
+    "journal": "Science Fiction",
+    "date_of_release": "2015-04-22",
+    "imbd_rating": 7.4,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 250000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 10,
+  "fields": {
+    "title": "Ant-Man",
+    "journal": "Science Fiction",
+    "date_of_release": "2015-07-14",
+    "imbd_rating": 7.3,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 130000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 11,
+  "fields": {
+    "title": "Captain America: Civil War",
+    "journal": "Science Fiction",
+    "date_of_release": "2016-04-27",
+    "imbd_rating": 7.8,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 25000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 12,
+  "fields": {
+    "title": "Doctor Strange",
+    "journal": "Science Fiction",
+    "date_of_release": "2016-10-25",
+    "imbd_rating": 7.5,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 165000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 13,
+  "fields": {
+    "title": "Guardians of the Galaxy Vol. 2",
+    "journal": "Science Fiction",
+    "date_of_release": "2017-04-19",
+    "imbd_rating": 7.7,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 200000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 14,
+  "fields": {
+    "title": "Spider-Man: Homecoming",
+    "journal": "Science Fiction",
+    "date_of_release": "2017-07-05",
+    "imbd_rating": 7.5,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 175000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 15,
+  "fields": {
+    "title": "Thor: Ragnarok",
+    "journal": "Science Fiction",
+    "date_of_release": "2017-10-25",
+    "imbd_rating": 7.9,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 180000000,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 16,
+  "fields": {
+    "title": "Black Panther",
+    "journal": "Science Fiction",
+    "date_of_release": "2018-02-13",
+    "imbd_rating": 7.5,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 0,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 17,
+  "fields": {
+    "title": "Avengers: Infinity War",
+    "journal": "Science Fiction",
+    "date_of_release": "2018-04-25",
+    "imbd_rating": 8.7,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 0,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 18,
+  "fields": {
+    "title": "Ant-Man and the Wasp",
+    "journal": "Science Fiction",
+    "date_of_release": "2018-07-04",
+    "imbd_rating": 7.1,
+    "comic": "Marvel",
+    "director": null,
+    "budget": 0,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 19,
+  "fields": {
+    "title": "Man Of Steel",
+    "journal": "Action",
+    "date_of_release": "2013-05-14",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 20,
+  "fields": {
+    "title": "Batman v Superman: Dawn of Justice",
+    "journal": "Action",
+    "date_of_release": "2016-03-25",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 21,
+  "fields": {
+    "title": "Suicide Squad",
+    "journal": "Action",
+    "date_of_release": "2016-08-05",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 22,
+  "fields": {
+    "title": "Wonder Woman",
+    "journal": "Action",
+    "date_of_release": "2017-06-02",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 23,
+  "fields": {
+    "title": "ustice League",
+    "journal": "Action",
+    "date_of_release": "2017-11-17",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 24,
+  "fields": {
+    "title": "Aquaman",
+    "journal": "Action",
+    "date_of_release": "2018-12-21",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+},
+{
+  "model": "movies.movieinformation",
+  "pk": 25,
+  "fields": {
+    "title": "Shazam",
+    "journal": "Action Comedy",
+    "date_of_release": "2019-04-05",
+    "imbd_rating": null,
+    "comic": "DC",
+    "director": null,
+    "budget": null,
+    "duration": null
+  }
+}
+]
