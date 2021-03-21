@@ -3,11 +3,11 @@ from rest_framework import urls, routers, serializers, viewsets
 from django.urls import path, include
 
 router = routers.DefaultRouter()
-router.register(r"person", PersonViewSet)
+# router.register(r"person", PersonViewSet)
 
 
 urlpatterns = [
-    path("", include(router.urls)),
-    path("movie/", MovieListView.as_view(), name="movie_list_view"),
+    path("", MovieListView.as_view(), name="movie_list_view"),
+    # path("", include(router.urls)),
     # path("movie_add_update/", MovieCreateView.as_view(), name="movie_list_view"),
 ]

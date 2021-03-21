@@ -1,0 +1,67 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /movie/:
+    get:
+      operationId: listMovieInformations
+      description: ''
+      parameters:
+      - name: search
+        required: false
+        in: query
+        description: A search term.
+        schema:
+          type: string
+      - name: ordering
+        required: false
+        in: query
+        description: Which field to use when ordering the results.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MovieList'
+          description: ''
+      tags:
+      - movie
+components:
+  schemas:
+    MovieList:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        title:
+          type: string
+          maxLength: 50
+        journal:
+          type: string
+          maxLength: 30
+        date_of_release:
+          type: string
+          format: date
+        imbd_rating:
+          type: number
+          nullable: true
+        comic:
+          type: string
+          maxLength: 10
+        director:
+          type: integer
+          nullable: true
+        budget:
+          type: integer
+          nullable: true
+      required:
+      - title
+      - journal
+      - date_of_release
+      - comic

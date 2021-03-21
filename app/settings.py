@@ -10,12 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "y3z((nn_lrte9h-+z%nh+zlkpg#hv3*u8zkq&zoj_6j9u##w*b"
+SECRET_KEY = os.environ.get("SECRETE_KEY","y3z((nn_lrte9h-+z%nh+zlkpg#hv3*u8zkq&zoj_6j9u##w*b")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (bool(int(os.environ.get('DEBUG',1))))
 
-ALLOWED_HOSTS = ["eb7-movie.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost","eb7-movie.herokuapp.com"]
 
 
 # Application definition
@@ -51,7 +51,7 @@ ROOT_URLCONF = "app.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ['templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -75,13 +75,9 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'movies',
-        'USER': 'movies',
-        'PASSWORD': 'movies',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
@@ -128,6 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
