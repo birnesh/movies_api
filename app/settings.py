@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRETE_KEY","y3z((nn_lrte9h-+z%nh+zlkpg#hv3*u8zkq&zoj_6j9u##w*b")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (bool(int(os.environ.get('DEBUG',1))))
+DEBUG = (bool(int(os.environ.get('DEBUG_VALUE',1))))
 
-ALLOWED_HOSTS = ["localhost","eb7-movie.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost","moviez-api.herokuapp.com"]
 
 
 # Application definition
