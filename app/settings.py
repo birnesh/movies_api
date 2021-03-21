@@ -15,7 +15,7 @@ SECRET_KEY = "y3z((nn_lrte9h-+z%nh+zlkpg#hv3*u8zkq&zoj_6j9u##w*b"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["eb7-movie.herokuapp.com"]
 
 
 # Application definition
